@@ -1,0 +1,27 @@
+/* Pastikan input dan teks area juga terlihat */
+input, textarea {
+  background-color: #222; /* Latar belakang gelap */
+  color: rgb(0, 0, 0); /* Teks putih */
+  border: 1px solid #555; /* Warna border */
+}
+
+.mb-4 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #000000;
+}
+
+.input::placeholder, textarea::placeholder {
+  color: #000000; /* Placeholder abu-abu terang */
+}
+
+/* Tombol */
+button {
+  background-color: #0b8dc9;
+  color: white; /* Teks tombol putih */
+  border-color: #78c1f5;
+}
+
+button:hover {
+  background-color: #78c1f5;
+  color: black; /* Teks tombol hitam saat hover */
+}

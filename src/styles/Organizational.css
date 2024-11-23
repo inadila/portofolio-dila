@@ -1,0 +1,13 @@
+.organizational-container {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  flex-wrap: wrap;  /* Agar card bisa menyesuaikan di perangkat kecil */
+  height: 10%;
+  
+}
+
+.card {
+  flex: 1 1 45%; /* 45% lebar card untuk dua card di baris yang sama */
+}

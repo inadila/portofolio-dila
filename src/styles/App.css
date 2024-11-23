@@ -1,0 +1,218 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css');
+
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.app-container {
+  background-color: #f8f9fa;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.app-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+
+/* Navbar */
+.navbar-custom {
+  position: fixed; /* Tetap di atas */
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  z-index: 1000;
+  height: 11%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.navbar-nav {
+  display: flex; /* Flexbox untuk navbar */
+  gap: 20px; /* Jarak antar item */
+  justify-content: center; /* Menyelaraskan item navbar */
+}
+
+.navbar-nav .nav-link {
+  font-family: Cambria, serif; /* Font Cambria */
+  color: white; /* Warna teks default putih */
+  text-decoration: none; /* Hilangkan underline */
+  position: relative; /* Dibutuhkan untuk ::after */
+  transition: color 0.3s ease-in-out; /* Animasi warna */
+}
+
+/* Pseudoelement untuk underline */
+.navbar-nav .nav-link::after {
+  content: ''; /* Membuat garis tambahan */
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #1a415e;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  color: #78c1f5; /* Ubah warna teks */
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%; /* Garis meluas ke kanan */
+}
+
+.main-content {
+  margin-top: 12%; /* Memberikan jarak agar konten tidak tertutupi navbar */
+  padding: 20px;
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+  height: 45px;
+  position: absolute;
+}
+
+/* Nama di kanan tengah */
+.name-container {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  color: #000000;
+  font-family: Cambria, serif;
+}
+
+.name-container h1 {
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+/* =================================== */
+
+.about,
+.organ,
+.creation,
+.contact,
+.work {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.organ {
+  margin-top: 70px;
+}
+
+.contact {
+  margin-bottom: 50px;
+  margin-top: 50px;;
+}
+
+.creation {
+  margin-top: 100px;
+  margin-bottom: -70px;
+}
+
+.work {
+  margin-top: -70px;
+}
+
+/* Style untuk form di bagian kontak */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.contact-left,
+.contact-right {
+  width: 48%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-input,
+.contact-textarea {
+  margin-bottom: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-button {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  background-color: #1a415e;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+  background-color: #78c1f5;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #1a415e;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #78c1f5;
+}
+
+/* Button Download CV */
+.download-cv {
+  background-color: #78c1f5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-cv:hover {
+  background-color: #1a415e;
+}
+
+.download-cv i {
+  margin-right: 8px;
+}
